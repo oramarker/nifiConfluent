@@ -1,0 +1,5 @@
+Nar depencencies.
+
+Each NAR can only have a single NAR dependency. Typically we package the Controller Service APIs together or establish a chain. By establishing a chain this is building a transitive NAR dependency. Any Controller Service APIs bundled in ancestor NARs will be available.
+
+Note, I'm specifically calling out Controller Service APIs as the implementations of the Controller Services do not need to be in this NAR dependency chain I'm describing. They can be bundled in a separate adjacent NARs that share the same Controller Service API NAR dependency.
